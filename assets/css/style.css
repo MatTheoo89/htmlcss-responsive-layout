@@ -1,66 +1,68 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-ul, li{
+ul,
+li {
     list-style: none;
     padding-left: 10px;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
 
 /*  UTILITY  */
 
-.debug-1{
-    background-color:rgba(255, 0, 0, .25);
+.debug-1 {
+    background-color: rgba(255, 0, 0, .25);
     border: 1px solid red;
 }
 
-.debug-2{
-    background-color:rgba(0, 255, 0, .25);
+.debug-2 {
+    background-color: rgba(0, 255, 0, .25);
     border: 1px solid greenyellow;
 }
 
-.debug-3{
-    background-color:rgba(0, 0, 255, .25);
+.debug-3 {
+    background-color: rgba(0, 0, 255, .25);
     border: 1px solid aqua;
 }
 
 
 /*  COMPONENTS  */
 
-.main-container{
+.main-container {
     width: 85%;
     margin: 0 auto;
     padding-top: 30px;
     padding-bottom: 40px;
 }
 
-.d-flex{
+.d-flex {
     display: flex;
 }
 
-.f-center{
+.f-center {
     align-items: center;
 }
-.f-wrap{
+
+.f-wrap {
     flex-wrap: wrap;
 }
 
-.card{
+.card {
     border-radius: 20px;
     padding: 20px 15px;
     padding-bottom: 20px;
@@ -68,18 +70,18 @@ img{
     text-align: center;
 }
 
-.card.white{
+.card.white {
     background-color: #fff;
 }
 
-.sec-colored{
+.sec-colored {
     background-color: #9792E4;
     color: #fff;
 }
 
 /*  BUTTON  */
 
-.btn{
+.btn {
     border: none;
     padding: 10px 45px;
     text-decoration: none;
@@ -89,7 +91,7 @@ img{
     border-radius: 50px;
 }
 
-.btn.btn-violet{
+.btn.btn-violet {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,7 +106,7 @@ img{
 
 /*  HEADER  */
 
-header{
+header {
     background-color: #0084FD;
     height: 75px;
     width: 100%;
@@ -114,89 +116,91 @@ header{
 
 
 /*  NAVBAR  */
-nav{
+nav {
     justify-content: space-between;
 }
 
-nav i{
+nav i {
     color: #fff;
     font-size: 1.75rem;
 }
+
 /*  /NAVBAR  */
 
 
 /*  MAIN  */
 
-section .row{
+section .row {
     flex-direction: column;
 }
 
-section .row .card{
+section .row .card {
     background-color: #B5DDFF;
     width: 100%;
 }
 
-section .row .card h3{
+section .row .card h3 {
     font-weight: 900;
     text-transform: none;
 }
 
 section .card h3,
 section .card p,
-section .card img{
+section .card img {
     margin-bottom: 2rem;
 }
 
-section .row .card.a-left{
+section .row .card.a-left {
+    flex-direction: column;
     text-align: left;
     padding-left: 20px;
     padding-bottom: 0;
 }
 
-section .row .card.a-left h3{
+section .row .card.a-left h3 {
     text-align: left;
 }
 
-section .row .card .btn{
+section .row .card .btn {
     background-color: #0084FD;
     margin-bottom: 2rem;
 }
 
 section .row .card .btn i,
-section .row .card .btn span{
+section .row .card .btn span {
     color: #fff;
 }
 
-section .row .card .btn i{
+section .row .card .btn i {
     font-size: 1rem;
     margin: 0;
 }
 
 section .row .card i,
-section .row .card h3{
+section .row .card h3 {
     color: #0084FD;
 }
 
-section .row .card i{
+section .row .card i {
     font-size: 4rem;
     margin-bottom: 1.5rem;
 }
 
-section .row .card p{
+section .row .card p {
     color: #5A6E7F;
     font-weight: 600;
 }
 
-section .row .card.a-left img{
+section .row .card.a-left img {
     margin-bottom: -4px;
 }
 
 section.sec-colored .main-container h2,
-section.sec-colored .main-container p{
+section.sec-colored .main-container p {
     margin-bottom: 2rem;
 }
 
-section.sec-colored .main-container .card.white{
+section.sec-colored .main-container .card.white {
     display: flex;
     flex-direction: column;
     /* align-items: center; */
@@ -204,21 +208,21 @@ section.sec-colored .main-container .card.white{
 
 section.sec-colored .main-container .card.white h3,
 section.sec-colored .main-container .card.white p,
-section.sec-colored .main-container .card.white i{
+section.sec-colored .main-container .card.white i {
     color: #000;
 }
 
-section.sec-colored .main-container .card.white p{
+section.sec-colored .main-container .card.white p {
     font-style: italic;
     font-weight: 300;
 }
 
 section.sec-colored .main-container img,
-section.sec-colored .main-container h2{
+section.sec-colored .main-container h2 {
     margin-bottom: 2rem;
 }
 
-section.main-container h3{
+section.main-container h3 {
     font-weight: 400;
     text-align: center;
     text-transform: uppercase;
@@ -226,52 +230,53 @@ section.main-container h3{
 
 }
 
-section.main-container h2{
+section.main-container h2 {
     font-size: 2rem;
     color: #9792E4;
     text-align: center;
     margin-bottom: 2rem;
 }
 
-section.main-container p{
+section.main-container p {
     color: #5A6E7F;
     margin-bottom: 2rem;
     line-height: 1.5rem;
 }
 
-section.main-container .card.sec-colored{
+section.main-container .card.sec-colored {
     flex-direction: column;
     text-align: center;
 }
 
 
 section.main-container .card.sec-colored img,
-section.main-container.about-us img{
+section.main-container.about-us img {
     clip-path: circle();
     width: 250px;
 }
 
-section.main-container .card.sec-colored .card-text{
-text-align: center;
+section.main-container .card.sec-colored .card-text {
+    text-align: center;
 }
 
-section.main-container .card.sec-colored .card-text p{
+section.main-container .card.sec-colored .card-text p {
     color: #fff;
 }
 
-section.main-container .card.sec-colored .card-text h3{
+section.main-container .card.sec-colored .card-text h3 {
     margin: 0;
     font-weight: 600;
 }
 
-section.main-container .card.sec-colored .card-text p::after{
+section.main-container .card.sec-colored .card-text p::after {
     content: '\f10e';
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     font-size: 2rem;
     margin-left: 5px;
 }
-section.main-container .card.sec-colored .card-text p::before{
+
+section.main-container .card.sec-colored .card-text p::before {
     content: '\f10d';
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -280,29 +285,30 @@ section.main-container .card.sec-colored .card-text p::before{
     text-transform: ;
 }
 
-section.sec-colored .main-container{
+section.sec-colored .main-container {
     flex-direction: column;
 }
 
 section.sec-colored .main-container .card.white h2,
-section.sec-colored .main-container .card.white h3{
+section.sec-colored .main-container .card.white h3 {
     color: #9792E4;
     align-items: flex-start;
 }
 
-section.sec-colored .main-container .card.white h2{
+section.sec-colored .main-container .card.white h2 {
     font-size: 4rem;
 }
-section.sec-colored .main-container .card.white h3{
+
+section.sec-colored .main-container .card.white h3 {
     font-size: 1.5rem;
 }
 
-section.sec-colored .main-container .card.white{
+section.sec-colored .main-container .card.white {
     padding: 20px;
     text-align: left;
 }
 
-.btn-more{
+.btn-more {
     width: 140px;
     border: none;
     padding: 10px 35px;
@@ -316,53 +322,48 @@ section.sec-colored .main-container .card.white{
     color: #FFFFFF;
 }
 
-
-section.main-container.about-us .about-us{
-    width: 70%;
-}
-
-section.main-container.about-us .about-us-avatar{
+section.main-container.about-us .about-us-avatar {
     flex-direction: column;
 }
 
-section.main-container.about-us .about-us-avatar h3{
+section.main-container.about-us .about-us-avatar h3 {
     color: #9792E4;
     text-transform: none;
     font-size: 2rem;
     font-weight: bold;
 }
 
-section.main-container.about-us img{
+section.main-container.about-us img {
     margin-bottom: 1rem;
 }
 
-section.main-container.about-us .about-us-avatar .btn-more{
+section.main-container.about-us .about-us-avatar .btn-more {
     width: 250px;
 }
 
-section.sec-colored .main-container.s-4{
+section.sec-colored .main-container.s-4 {
     text-align: center;
 }
 
-section.sec-colored .main-container.s-4 h4{
+section.sec-colored .main-container.s-4 h4 {
     text-transform: uppercase;
     font-weight: lighter;
     color: #5A6E7F;
     margin-bottom: 2rem;
 }
 
-section.sec-colored .main-container.s-4 h3{
+section.sec-colored .main-container.s-4 h3 {
     font-size: 2rem;
     color: #fff;
     margin-bottom: 2rem;
 }
 
-section.sec-colored .main-container.s-4 h2{
+section.sec-colored .main-container.s-4 h2 {
     font-size: 4rem;
     color: #FDC15F;
 }
 
-section.sec-colored .main-container.s-4 .btn-big{
+section.sec-colored .main-container.s-4 .btn-big {
     width: 300px;
     border: none;
     padding: 20px 55px;
@@ -377,7 +378,7 @@ section.sec-colored .main-container.s-4 .btn-big{
     font-weight: 700;
 }
 
-section.sec-colored .main-container.s-4 #link{
+section.sec-colored .main-container.s-4 #link {
     text-decoration: underline;
 }
 
@@ -385,101 +386,111 @@ section.sec-colored .main-container.s-4 #link{
 
 
 /*  FOOTER  */
-    footer{
-        padding: 40px 0;
-        height: 235px;
-        background-color: #333333;
-        color: #fff;
-        text-align: center;
-    }
+footer {
+    padding: 40px 0;
+    height: 235px;
+    background-color: #333333;
+    color: #fff;
+    text-align: center;
+}
 
-    footer a{
-        color: #9792E4;
-        display: inline-block;
-        text-decoration: underline;
-    }
+footer a {
+    color: #9792E4;
+    display: inline-block;
+    text-decoration: underline;
+}
 
-    footer .container p{
-        margin-bottom: 2rem;
-    }
+footer .container p {
+    margin-bottom: 2rem;
+}
+
 /*  /FOOTER  */
 
 
 
 
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
 
-    section .row{
+    section .row {
         flex-direction: row;
     }
 
-    section .row .card{
+    section .row .card {
         width: 30%;
         margin-right: 20px;
     }
 
-    section .row .card.card.a-left{
+    section .row .card.card.a-left {
         width: 62%;
     }
 
-    section .row .card.card.a-left img{
+    section .row .card.card.a-left img {
         width: 40%;
     }
 
 
     section.sec-colored .main-container h2,
-    section.main-container h2{
+    section.main-container h2 {
         font-size: 3rem;
     }
 
-    section.main-container-about-us{
+    section.main-container-about-us {
         display: flex;
     }
 
+    section.main-container.about-us .about-us {
+        width: 70%;
+    }
+
     section.main-container .card.sec-colored .card-text h3,
-    
-    section.main-container .card.sec-colored .card-text p{
+
+    section.main-container .card.sec-colored .card-text p {
         text-align: left;
     }
 
-    section.main-container .card.sec-colored{
-    flex-direction: row;
-    align-items: center;     
+    section.main-container .card.sec-colored {
+        flex-direction: row;
+        align-items: center;
     }
 
-    section.main-container .card.sec-colored img{
+    section.main-container .card.sec-colored img {
         margin: 0;
     }
 
-    section.sec-colored .main-container{
+    section.sec-colored .main-container {
         flex-direction: row;
     }
 
-    section.sec-colored .main-container .card.white.card-sm{
+    section.sec-colored .main-container .col {
+        text-align: center;
+    }
+
+    section.sec-colored .main-container .card.white.card-sm {
         width: calc(100% / 2 - 40px);
         margin-right: 20px;
     }
 
-    section.main-container.about-us{
+    section.main-container.about-us {
         display: flex;
         flex-direction: row;
     }
 
-    section.main-container.about-us .about-us-avatar{
+    section.main-container.about-us .about-us-avatar {
         width: 30%;
     }
 
-    footer{
+    footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    footer .container{
+
+    footer .container {
         width: 50%;
     }
-    }
+}
 }
 
 
@@ -487,89 +498,96 @@ section.sec-colored .main-container.s-4 #link{
 
 
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
 
-    .main-container{
+    .main-container {
         width: 80%;
         max-width: 1150px;
         margin: 0 auto;
     }
 
-    section .row .card.card.a-left{
+    section .row .card.card.a-left {
         display: flex;
     }
 
-    section .row .card.card.a-left .col{
+    section .row .card.card.a-left .col {
         width: 60%;
     }
 
-    section .row .card.card.a-left img{
+    section .row .card.card.a-left img {
         margin-bottom: 0px;
     }
 
-    section.sec-colored .main-container{
+    section.sec-colored .main-container {
         display: flex;
         justify-content: space-between;
+        align-items: baseline;
     }
 
-    section.sec-colored .col{
+    section.sec-colored .col {
         padding: 40px;
         width: 50%;
     }
 
-    section.sec-colored .col h2{
+    section.sec-colored .col p {
+        width: 95%;
+    }
+
+    section.sec-colored .col h2 {
         font-size: 2rem;
     }
 
-    section.sec-colored .card.white.card-sm{
+    section.sec-colored .card.white {
+        height: 70%;
+    }
+
+    section.sec-colored .card.white.card-sm {
         margin: 0 60px;
         margin-top: 100px;
         width: 50%;
     }
 
-    section.sec-colored .main-container .card.white.card-sm{
+    section.sec-colored .main-container .card.white.card-sm {
         width: 25%;
     }
 
-    section.sec-colored .main-container.s-4{
+    section.sec-colored .main-container.s-4 {
         display: inline-block;
     }
 
-/* NAVBAR DESKTOP */
+    /* NAVBAR DESKTOP */
 
-    header nav.main-container.nav-media.d-flex{
+    header nav.main-container.nav-media.d-flex {
         display: none;
     }
 
-    header nav.main-container.nav-desktop{
-        display: block;
-    }
-
-    header nav.nav-desktop .menu{
-        display: flex;
-    }
-
-    header nav.main-container.nav-desktop img{
-        margin: 0;
-    }
-
-    header nav.nav-desktop .menu ul.d-flex{
-        color: #fff;
-    }
-
-
-    header .nav-desktop .btn-head{
-        width: 300px;
-        border: none;
-        padding: 20px 55px;
+    .btn-head {
+        height: 100%;
+        color: white;
+        background-color: aqua;
+        padding: 10px 20px;
+        border-radius: 50px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        margin: 10px 5px;
         cursor: pointer;
-        border-radius: 50px;
-        background-color: #fff;
-        color: #9792E4;
-        font-weight: 700;
     }
+
+    nav .nav-desk {
+        justify-content: space-between;
+    }
+
+    nav .nav-desk .menu ul {
+        margin-right: 20px;
+    }
+
+    nav .nav-desk .menu ul li {
+        margin-left: 20px;
+    }
+
+    nav .nav-desk .menu ul li a {
+        color: white;
+    }
+
+
 }
