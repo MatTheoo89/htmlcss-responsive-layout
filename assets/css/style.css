@@ -80,7 +80,7 @@ img{
 
 .btn{
     border: none;
-    padding: 5px 10px;
+    padding: 10px 45px;
     text-decoration: none;
     display: inline-block;
     margin: 10px 5px;
@@ -125,6 +125,10 @@ nav i{
 
 
 /*  MAIN  */
+
+section .row{
+    flex-direction: column;
+}
 
 section .row .card{
     background-color: #B5DDFF;
@@ -200,9 +204,57 @@ section.sec-colored .main-container .card.white p{
     font-weight: 300;
 }
 
+section.sec-colored .main-container img,
+section.sec-colored .main-container h2{
+    margin-bottom: 2rem;
+}
+
 /*  /MAIN  */
 
 
 /*  FOOTER  */
 
 /*  /FOOTER  */
+
+
+
+
+
+@media (min-width: 768px){
+
+    section .row{
+        flex-direction: row;
+    }
+
+    section .row .card{
+        width: 30%;
+        margin-right: 20px;
+    }
+
+    section .row .card.card.a-left{
+        width: 62%;
+    }
+
+    section .row .card.card.a-left img{
+        width: 40%;
+    }
+
+    section.sec-colored .main-container h2{
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: 1200px){
+
+    section .row .card.card.a-left{
+        display: flex;
+    }
+
+    section .row .card.card.a-left .col{
+        width: 60%;
+    }
+
+    section .row .card.card.a-left img{
+        margin-bottom: 0px;
+    }
+}
