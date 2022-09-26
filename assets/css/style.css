@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul, li{
+    list-style: none;
+}
+
+
+/*  UTILITY  */
+
+.debug-1{
+    background-color:rgba(255, 0, 0, .25);
+    border: 1px solid red;
+}
+
+.debug-2{
+    background-color:rgba(0, 255, 0, .25);
+    border: 1px solid greenyellow;
+}
+
+.debug-3{
+    background-color:rgba(0, 0, 255, .25);
+    border: 1px solid aqua;
+}
+
+
+/*  COMPONENTS  */
+
+.main-container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.small-container{
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.big-container{
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.f-center{
+    align-items: center;
+}
+.f-wrap{
+    flex-wrap: wrap;
+}
+
+
+/*  BUTTON  */
+
+.btn{
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+
+.btn.big{
+    padding: 10px 25px;
+}
+
+.btn.empty{
+    border: 2px solid coral;
+    background-color: transparent;
+}
+
+
+/*  HEADER  */
+
+/*  /HEADER  */
+
+
+/*  NAVBAR  */
+
+/*  /NAVBAR  */
+
+
+/*  JUMBOTRON  */
+
+/*  /JUMBOTRON  */
+
+
+/*  MAIN  */
+
+/*  /MAIN  */
+
+
+/*  FOOTER  */
+
+/*  /FOOTER  */
