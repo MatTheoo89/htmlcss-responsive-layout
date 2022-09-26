@@ -244,7 +244,8 @@ section.main-container .card.sec-colored{
 }
 
 
-section.main-container .card.sec-colored img{
+section.main-container .card.sec-colored img,
+section.main-container.about-us img{
     clip-path: circle();
     width: 250px;
 }
@@ -313,6 +314,31 @@ section.sec-colored .main-container .card.white{
     background-color: #9792E4;
     color: #FFFFFF;
 }
+
+
+section.main-container.about-us .about-us{
+    width: 70%;
+}
+
+section.main-container.about-us .about-us-avatar{
+    flex-direction: column;
+}
+
+section.main-container.about-us .about-us-avatar h3{
+    color: #9792E4;
+    text-transform: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+img, section.main-container.about-us img{
+    margin-bottom: 1rem;
+}
+
+section.main-container.about-us .about-us-avatar .btn-more{
+    width: 250px;
+}
+
 /*  /MAIN  */
 
 
@@ -349,6 +375,10 @@ section.sec-colored .main-container .card.white{
         font-size: 3rem;
     }
 
+    section.main-container-about-us{
+        display: flex;
+    }
+
     section.main-container .card.sec-colored .card-text h3,
     
     section.main-container .card.sec-colored .card-text p{
@@ -371,6 +401,15 @@ section.sec-colored .main-container .card.white{
     section.sec-colored .main-container .card.white.card-sm{
         width: calc(100% / 2 - 40px);
         margin-right: 20px;
+    }
+
+    section.main-container.about-us{
+        display: flex;
+        flex-direction: row;
+    }
+
+    section.main-container.about-us .about-us-avatar{
+        width: 30%;
     }
 }
 
