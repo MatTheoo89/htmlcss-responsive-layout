@@ -135,6 +135,11 @@ section .row .card{
     width: 100%;
 }
 
+section .row .card h3{
+    font-weight: 900;
+    text-transform: none;
+}
+
 section .card h3,
 section .card p,
 section .card img{
@@ -145,6 +150,10 @@ section .row .card.a-left{
     text-align: left;
     padding-left: 20px;
     padding-bottom: 0;
+}
+
+section .row .card.a-left h3{
+    text-align: left;
 }
 
 section .row .card .btn{
@@ -175,7 +184,6 @@ section .row .card i{
 section .row .card p{
     color: #5A6E7F;
     font-weight: 600;
-    /* margin-bottom: 2rem; */
 }
 
 section .row .card.a-left img{
@@ -209,6 +217,67 @@ section.sec-colored .main-container h2{
     margin-bottom: 2rem;
 }
 
+section.main-container h3{
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+
+}
+
+section.main-container h2{
+    font-size: 2rem;
+    color: #9792E4;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+section.main-container p{
+    color: #5A6E7F;
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+}
+
+section.main-container .card.sec-colored{
+    flex-direction: column;
+    text-align: center;
+}
+
+
+section.main-container .card.sec-colored img{
+    clip-path: circle();
+    width: 250px;
+}
+
+section.main-container .card.sec-colored .card-text{
+text-align: center;
+}
+
+section.main-container .card.sec-colored .card-text p{
+    color: #fff;
+}
+
+section.main-container .card.sec-colored .card-text h3{
+    margin: 0;
+    font-weight: 600;
+}
+
+section.main-container .card.sec-colored .card-text p::after{
+    content: '\f10e';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 2rem;
+    margin-left: 5px;
+}
+section.main-container .card.sec-colored .card-text p::before{
+    content: '\f10d';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 2rem;
+    margin-right: 5px;
+    text-transform: ;
+}
+
 /*  /MAIN  */
 
 
@@ -239,8 +308,18 @@ section.sec-colored .main-container h2{
         width: 40%;
     }
 
-    section.sec-colored .main-container h2{
-        font-size: 4rem;
+    section.sec-colored .main-container h2,
+    section.main-container h2{
+        font-size: 3rem;
+    }
+
+    section.main-container .card.sec-colored{
+    flex-direction: row;
+    align-items: center;     
+    }
+
+    section.main-container .card.sec-colored img{
+        margin: 0;
     }
 }
 
