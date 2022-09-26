@@ -5,7 +5,7 @@
 }
 
 body{
-    margin: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 
 a{
@@ -14,6 +14,10 @@ a{
 
 ul, li{
     list-style: none;
+}
+
+img{
+    max-width: 100%;
 }
 
 
@@ -38,18 +42,7 @@ ul, li{
 /*  COMPONENTS  */
 
 .main-container{
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-.small-container{
-    width: 80%;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-.big-container{
-    width: 95%;
-    max-width: 1400px;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -64,45 +57,103 @@ ul, li{
     flex-wrap: wrap;
 }
 
+.card{
+    border-radius: 20px;
+    padding: 20px 15px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 
 /*  BUTTON  */
 
 .btn{
     border: none;
     padding: 5px 10px;
-    text-align: center;
     text-decoration: none;
     display: inline-block;
     margin: 10px 5px;
     cursor: pointer;
+    border-radius: 50px;
 }
-
-.btn.big{
-    padding: 10px 25px;
-}
-
-.btn.empty{
-    border: 2px solid coral;
-    background-color: transparent;
-}
-
 
 /*  HEADER  */
+
+header{
+    background-color: #0084FD;
+    height: 75px;
+    width: 100%;
+}
 
 /*  /HEADER  */
 
 
 /*  NAVBAR  */
+nav{
+    justify-content: space-between;
+}
 
+nav i{
+    color: #fff;
+    font-size: 1.75rem;
+}
 /*  /NAVBAR  */
 
 
-/*  JUMBOTRON  */
-
-/*  /JUMBOTRON  */
-
-
 /*  MAIN  */
+
+section .row{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+}
+
+section .row .card{
+    background-color: #B5DDFF;
+    width: 100%;
+}
+
+section .row .card.a-left{
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 0;
+}
+
+section .row .card .btn{
+    background-color: #0084FD;
+    margin-bottom: 2rem;
+}
+
+section .row .card .btn i,
+section .row .card .btn span{
+    color: #fff;
+}
+
+section .row .card .btn i{
+    font-size: 1rem;
+    margin: 0;
+}
+
+section .row .card i,
+section .row .card h3{
+    color: #0084FD;
+    margin-bottom: 20px;
+}
+
+section .row .card i{
+    font-size: 4rem;
+}
+
+section .row .card p{
+    color: #5A6E7F;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+section .row .card.a-left img{
+    margin-bottom: -4px;
+}
 
 /*  /MAIN  */
 
