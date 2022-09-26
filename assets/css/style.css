@@ -198,7 +198,7 @@ section.sec-colored .main-container p{
 section.sec-colored .main-container .card.white{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
 }
 
 section.sec-colored .main-container .card.white h3,
@@ -278,6 +278,41 @@ section.main-container .card.sec-colored .card-text p::before{
     text-transform: ;
 }
 
+section.sec-colored .main-container{
+    flex-direction: column;
+}
+
+section.sec-colored .main-container .card.white h2,
+section.sec-colored .main-container .card.white h3{
+    color: #9792E4;
+    align-items: flex-start;
+}
+
+section.sec-colored .main-container .card.white h2{
+    font-size: 4rem;
+}
+section.sec-colored .main-container .card.white h3{
+    font-size: 1.5rem;
+}
+
+section.sec-colored .main-container .card.white{
+    padding: 20px;
+    text-align: left;
+}
+
+.btn-more{
+    width: 140px;
+    border: none;
+    padding: 10px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 5px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #9792E4;
+    color: #FFFFFF;
+}
 /*  /MAIN  */
 
 
@@ -308,9 +343,16 @@ section.main-container .card.sec-colored .card-text p::before{
         width: 40%;
     }
 
+
     section.sec-colored .main-container h2,
     section.main-container h2{
         font-size: 3rem;
+    }
+
+    section.main-container .card.sec-colored .card-text h3,
+    
+    section.main-container .card.sec-colored .card-text p{
+        text-align: left;
     }
 
     section.main-container .card.sec-colored{
@@ -321,6 +363,15 @@ section.main-container .card.sec-colored .card-text p::before{
     section.main-container .card.sec-colored img{
         margin: 0;
     }
+
+    section.sec-colored .main-container{
+        flex-direction: row;
+    }
+
+    section.sec-colored .main-container .card.white.card-sm{
+        width: calc(100% / 2 - 40px);
+        margin-right: 20px;
+    }
 }
 
 
@@ -329,6 +380,12 @@ section.main-container .card.sec-colored .card-text p::before{
 
 
 @media (min-width: 1200px){
+
+    .main-container{
+        width: 80%;
+        max-width: 1150px;
+        margin: 0 auto;
+    }
 
     section .row .card.card.a-left{
         display: flex;
@@ -344,7 +401,7 @@ section.main-container .card.sec-colored .card-text p::before{
 
     section.sec-colored .main-container{
         display: flex;
-        align-items: flex-end;
+        justify-content: space-between;
     }
 
     section.sec-colored .col{
@@ -356,9 +413,13 @@ section.main-container .card.sec-colored .card-text p::before{
         font-size: 2rem;
     }
 
-    section.sec-colored .card.white{
+    section.sec-colored .card.white.card-sm{
         margin: 0 60px;
         margin-top: 100px;
         width: 50%;
+    }
+
+    section.sec-colored .main-container .card.white.card-sm{
+        width: 25%;
     }
 }
