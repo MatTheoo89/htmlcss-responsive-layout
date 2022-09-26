@@ -339,11 +339,68 @@ section.main-container.about-us .about-us-avatar .btn-more{
     width: 250px;
 }
 
+section.sec-colored .main-container.s-4{
+    text-align: center;
+}
+
+section.sec-colored .main-container.s-4 h4{
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: #5A6E7F;
+    margin-bottom: 2rem;
+}
+
+section.sec-colored .main-container.s-4 h3{
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+section.sec-colored .main-container.s-4 h2{
+    font-size: 4rem;
+    color: #FDC15F;
+}
+
+section.sec-colored .main-container.s-4 .btn-big{
+    width: 300px;
+    border: none;
+    padding: 20px 55px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 5px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: #fff;
+    color: #9792E4;
+    font-weight: 700;
+}
+
+section.sec-colored .main-container.s-4 #link{
+    text-decoration: underline;
+}
+
 /*  /MAIN  */
 
 
 /*  FOOTER  */
+    footer{
+        padding: 40px 0;
+        height: 235px;
+        background-color: #333333;
+        color: #fff;
+        text-align: center;
+    }
 
+    footer a{
+        color: #9792E4;
+        display: inline-block;
+        text-decoration: underline;
+    }
+
+    footer .container p{
+        margin-bottom: 2rem;
+    }
 /*  /FOOTER  */
 
 
@@ -411,6 +468,17 @@ section.main-container.about-us .about-us-avatar .btn-more{
     section.main-container.about-us .about-us-avatar{
         width: 30%;
     }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .container{
+        width: 50%;
+    }
+    }
 }
 
 
@@ -460,5 +528,9 @@ section.main-container.about-us .about-us-avatar .btn-more{
 
     section.sec-colored .main-container .card.white.card-sm{
         width: 25%;
+    }
+
+    section.sec-colored .main-container.s-4{
+        display: inline-block;
     }
 }
